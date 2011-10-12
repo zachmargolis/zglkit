@@ -1,0 +1,240 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9249DA6E14456EC70049F432 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9249DA6D14456EC70049F432 /* Foundation.framework */; };
+		9249DA7414456EC70049F432 /* ZGLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9249DA7314456EC70049F432 /* ZGLKit.m */; };
+		9249DA7F14456F030049F432 /* ZGLKView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9249DA7D14456F030049F432 /* ZGLKView.h */; };
+		9249DA8014456F030049F432 /* ZGLKView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9249DA7E14456F030049F432 /* ZGLKView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9249DA6A14456EC70049F432 /* libZGLKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZGLKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9249DA6D14456EC70049F432 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9249DA7114456EC70049F432 /* ZGLKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZGLKit-Prefix.pch"; sourceTree = "<group>"; };
+		9249DA7214456EC70049F432 /* ZGLKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGLKit.h; sourceTree = "<group>"; };
+		9249DA7314456EC70049F432 /* ZGLKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGLKit.m; sourceTree = "<group>"; };
+		9249DA7D14456F030049F432 /* ZGLKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGLKView.h; sourceTree = "<group>"; };
+		9249DA7E14456F030049F432 /* ZGLKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGLKView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9249DA6714456EC70049F432 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9249DA6E14456EC70049F432 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9249DA5F14456EC70049F432 = {
+			isa = PBXGroup;
+			children = (
+				9249DA6F14456EC70049F432 /* ZGLKit */,
+				9249DA6C14456EC70049F432 /* Frameworks */,
+				9249DA6B14456EC70049F432 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9249DA6B14456EC70049F432 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9249DA6A14456EC70049F432 /* libZGLKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9249DA6C14456EC70049F432 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9249DA6D14456EC70049F432 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9249DA6F14456EC70049F432 /* ZGLKit */ = {
+			isa = PBXGroup;
+			children = (
+				9249DA7214456EC70049F432 /* ZGLKit.h */,
+				9249DA7314456EC70049F432 /* ZGLKit.m */,
+				9249DA7014456EC70049F432 /* Supporting Files */,
+				9249DA7D14456F030049F432 /* ZGLKView.h */,
+				9249DA7E14456F030049F432 /* ZGLKView.m */,
+			);
+			path = ZGLKit;
+			sourceTree = "<group>";
+		};
+		9249DA7014456EC70049F432 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9249DA7114456EC70049F432 /* ZGLKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9249DA6814456EC70049F432 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9249DA7F14456F030049F432 /* ZGLKView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9249DA6914456EC70049F432 /* ZGLKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9249DA7714456EC70049F432 /* Build configuration list for PBXNativeTarget "ZGLKit" */;
+			buildPhases = (
+				9249DA6614456EC70049F432 /* Sources */,
+				9249DA6714456EC70049F432 /* Frameworks */,
+				9249DA6814456EC70049F432 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZGLKit;
+			productName = ZGLKit;
+			productReference = 9249DA6A14456EC70049F432 /* libZGLKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9249DA6114456EC70049F432 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 9249DA6414456EC70049F432 /* Build configuration list for PBXProject "ZGLKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9249DA5F14456EC70049F432;
+			productRefGroup = 9249DA6B14456EC70049F432 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9249DA6914456EC70049F432 /* ZGLKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9249DA6614456EC70049F432 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9249DA7414456EC70049F432 /* ZGLKit.m in Sources */,
+				9249DA8014456F030049F432 /* ZGLKView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9249DA7514456EC70049F432 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9249DA7614456EC70049F432 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9249DA7814456EC70049F432 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ZGLKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZGLKit/ZGLKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9249DA7914456EC70049F432 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ZGLKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZGLKit/ZGLKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9249DA6414456EC70049F432 /* Build configuration list for PBXProject "ZGLKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9249DA7514456EC70049F432 /* Debug */,
+				9249DA7614456EC70049F432 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9249DA7714456EC70049F432 /* Build configuration list for PBXNativeTarget "ZGLKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9249DA7814456EC70049F432 /* Debug */,
+				9249DA7914456EC70049F432 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9249DA6114456EC70049F432 /* Project object */;
+}
