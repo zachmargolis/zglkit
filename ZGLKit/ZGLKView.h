@@ -36,7 +36,10 @@ typedef enum {
 
 
 
-@interface ZGLKView : UIView
+@interface ZGLKView : UIView {
+    GLuint _defaultFramebuffer;
+    GLuint _colorRenderbuffer;
+}
 
 @property (nonatomic, retain) EAGLContext *context;
 @property (nonatomic, assign) id <ZGLKViewDelegate> delegate;
