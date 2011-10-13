@@ -11,6 +11,10 @@
 		9249DA7414456EC70049F432 /* ZGLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9249DA7314456EC70049F432 /* ZGLKit.m */; };
 		9249DA7F14456F030049F432 /* ZGLKView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9249DA7D14456F030049F432 /* ZGLKView.h */; };
 		9249DA8014456F030049F432 /* ZGLKView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9249DA7E14456F030049F432 /* ZGLKView.m */; };
+		92F529A71446B42700BDB79B /* ZGLKViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 92F529A51446B42700BDB79B /* ZGLKViewController.h */; };
+		92F529A81446B42700BDB79B /* ZGLKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F529A61446B42700BDB79B /* ZGLKViewController.m */; };
+		92F529AB1446C41900BDB79B /* NSDate+ZGLKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 92F529A91446C41900BDB79B /* NSDate+ZGLKAdditions.h */; };
+		92F529AC1446C41900BDB79B /* NSDate+ZGLKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F529AA1446C41900BDB79B /* NSDate+ZGLKAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		9249DA7314456EC70049F432 /* ZGLKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGLKit.m; sourceTree = "<group>"; };
 		9249DA7D14456F030049F432 /* ZGLKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGLKView.h; sourceTree = "<group>"; };
 		9249DA7E14456F030049F432 /* ZGLKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGLKView.m; sourceTree = "<group>"; };
+		92F529A51446B42700BDB79B /* ZGLKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGLKViewController.h; sourceTree = "<group>"; };
+		92F529A61446B42700BDB79B /* ZGLKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGLKViewController.m; sourceTree = "<group>"; };
+		92F529A91446C41900BDB79B /* NSDate+ZGLKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ZGLKAdditions.h"; sourceTree = "<group>"; };
+		92F529AA1446C41900BDB79B /* NSDate+ZGLKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ZGLKAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +71,15 @@
 		9249DA6F14456EC70049F432 /* ZGLKit */ = {
 			isa = PBXGroup;
 			children = (
+				9249DA7014456EC70049F432 /* Supporting Files */,
 				9249DA7214456EC70049F432 /* ZGLKit.h */,
 				9249DA7314456EC70049F432 /* ZGLKit.m */,
-				9249DA7014456EC70049F432 /* Supporting Files */,
 				9249DA7D14456F030049F432 /* ZGLKView.h */,
 				9249DA7E14456F030049F432 /* ZGLKView.m */,
+				92F529A51446B42700BDB79B /* ZGLKViewController.h */,
+				92F529A61446B42700BDB79B /* ZGLKViewController.m */,
+				92F529A91446C41900BDB79B /* NSDate+ZGLKAdditions.h */,
+				92F529AA1446C41900BDB79B /* NSDate+ZGLKAdditions.m */,
 			);
 			path = ZGLKit;
 			sourceTree = "<group>";
@@ -88,6 +100,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9249DA7F14456F030049F432 /* ZGLKView.h in Headers */,
+				92F529A71446B42700BDB79B /* ZGLKViewController.h in Headers */,
+				92F529AB1446C41900BDB79B /* NSDate+ZGLKAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +157,8 @@
 			files = (
 				9249DA7414456EC70049F432 /* ZGLKit.m in Sources */,
 				9249DA8014456F030049F432 /* ZGLKView.m in Sources */,
+				92F529A81446B42700BDB79B /* ZGLKViewController.m in Sources */,
+				92F529AC1446C41900BDB79B /* NSDate+ZGLKAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

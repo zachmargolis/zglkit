@@ -48,6 +48,18 @@
 
 #pragma mark Initialization
 
+- (id)init;
+{
+    self = [super init];
+    if (!self) {
+        return nil;
+    }
+    
+    [self ZGLKView_commonInit];
+    
+    return self;
+}
+
 - (id)initWithFrame:(CGRect)frame;
 {
     return [self initWithFrame:frame context:nil];
@@ -92,6 +104,8 @@
 
 - (void)dealloc;
 {
+    [self deleteDrawable];
+    
     [_context release];
     _context = nil;
     
@@ -202,6 +216,13 @@
 {
     // TOOD: remove and just stub for subclasses?
     [super drawRect:rect];
+}
+
+- (void)setNeedsDisplay;
+{
+    if (self.enableSetNeedsDisplay) {
+        [super setNeedsDisplay];
+    }
 }
 
 #pragma mark Private Methods
