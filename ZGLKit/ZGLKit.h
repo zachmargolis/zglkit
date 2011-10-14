@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ZGLKit : NSObject
+#import "ZGLKView.h"
+#import "ZGLKViewController.h"
 
-@end
