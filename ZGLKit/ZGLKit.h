@@ -10,4 +10,5 @@
 
 #import "ZGLKView.h"
 #import "ZGLKViewController.h"
-
+#import "ZGLKNamedEffect.h"
+#import "ZGLKBaseEffect.h"
