@@ -6,7 +6,6 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "ZGLKEffectPropertyLight.h"
 #import "ZGLKNamedEffect.h"
 #import "ZGLKVector4.h"

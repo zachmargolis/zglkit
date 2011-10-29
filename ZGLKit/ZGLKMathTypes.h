@@ -8,6 +8,8 @@
 #ifndef ZGLKit_ZGLKMathTypes_h
 #define ZGLKit_ZGLKMathTypes_h
 
+#import <OpenGLES/ES2/gl.h>
+
 #ifdef __cplusplus
 extern "C" {
 #endif

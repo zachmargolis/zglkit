@@ -9,10 +9,12 @@
 #import <Foundation/Foundation.h>
 
 #import "ZGLKBaseEffect.h"
+#import "ZGLKEffects.h"
 #import "ZGLKEffectProperty.h"
 #import "ZGLKEffectPropertyLight.h"
 #import "ZGLKEffectPropertyTransform.h"
 #import "ZGLKMathTypes.h"
+#import "ZGLKMathUtils.h"
 #import "ZGLKMatrix3.h"
 #import "ZGLKMatrix4.h"
 #import "ZGLKNamedEffect.h"
