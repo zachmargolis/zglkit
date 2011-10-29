@@ -7,7 +7,6 @@
 //
 
 #import "ZGLKViewController.h"
-#import "NSDate+ZGLKAdditions.h"
 #import "ZGLKView.h"
 #import <QuartzCore/CADisplayLink.h>
 

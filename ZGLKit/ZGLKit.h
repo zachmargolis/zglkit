@@ -24,5 +24,3 @@
 #import "ZGLKVector4.h"
 #import "ZGLKView.h"
 #import "ZGLKViewController.h"
-
-#import "NSDate+ZGLKAdditions.h"
