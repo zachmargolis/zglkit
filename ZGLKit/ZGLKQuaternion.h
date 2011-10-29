@@ -14,7 +14,8 @@ union _GLKQuaternion
     struct { ZGLKVector3 v; float s; };
     struct { float x, y, z, w; };
     float q[4];
-}
+};
+
 typedef union _GLKQuaternion ZGLKQuaternion;
 
 extern const ZGLKQuaternion ZGLKQuaternionIdentity;

@@ -9,6 +9,8 @@
 #ifndef ZGLKit_ZGLKMatrix3_h
 #define ZGLKit_ZGLKMatrix3_h
 
+#import "ZGLKQuaternion.h"
+
 union _GLKMatrix2
 {
     struct
@@ -35,7 +37,7 @@ typedef union _ZGLKMatrix3 ZGLKMatrix3;
 
 extern const ZGLKMatrix3 ZGLKMatrix3Identity;
 
-/*
+
 ZGLKMatrix3 ZGLKMatrix3Make(float m00, float m01, float m02, float m10, float m11, float m12, float m20, float m21, float m22);
 ZGLKMatrix3 ZGLKMatrix3MakeAndTranspose(float m00, float m01, float m02, float m10, float m11, float m12, float m20, float m21, float m22);
 ZGLKMatrix3 ZGLKMatrix3MakeRotation(float radians, float x, float y, float z);
@@ -63,6 +65,6 @@ ZGLKMatrix3 ZGLKMatrix3SetColumn(ZGLKMatrix3 matrix, int column, ZGLKVector3 vec
 ZGLKMatrix3 ZGLKMatrix3SetRow(ZGLKMatrix3 matrix, int row, ZGLKVector3 vector);
 ZGLKMatrix3 ZGLKMatrix3Subtract(ZGLKMatrix3 matrixLeft, ZGLKMatrix3 matrixRight);
 ZGLKMatrix3 ZGLKMatrix3Transpose(ZGLKMatrix3 matrix);
-*/
+
 
 #endif

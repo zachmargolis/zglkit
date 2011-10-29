@@ -10,6 +10,7 @@
 
 @implementation ZGLKEffectPropertyLight
 
+@synthesize diffuseColor = _diffuseColor;
 @synthesize enabled = _enabled;
 @synthesize linearAttenuation = _linearAttenuation;
 @synthesize position = _position;

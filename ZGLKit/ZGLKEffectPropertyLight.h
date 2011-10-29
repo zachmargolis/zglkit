@@ -19,6 +19,7 @@ typedef enum {
 
 @interface ZGLKEffectPropertyLight : ZGLKEffectProperty
 
+@property (nonatomic) ZGLKVector4 diffuseColor;
 @property (nonatomic) GLboolean enabled;
 @property (nonatomic) GLfloat linearAttenuation;
 @property (nonatomic) ZGLKVector4 position;
