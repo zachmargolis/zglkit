@@ -11,6 +11,11 @@
 		9249DA7414456EC70049F432 /* ZGLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9249DA7314456EC70049F432 /* ZGLKit.m */; };
 		9249DA7F14456F030049F432 /* ZGLKView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9249DA7D14456F030049F432 /* ZGLKView.h */; };
 		9249DA8014456F030049F432 /* ZGLKView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9249DA7E14456F030049F432 /* ZGLKView.m */; };
+		9264A8E6145C7A7400F8FBDF /* ZGLKMatrix4.c in Sources */ = {isa = PBXBuildFile; fileRef = 9264A8E1145C7A7400F8FBDF /* ZGLKMatrix4.c */; };
+		9264A8E7145C7A7400F8FBDF /* ZGLKQuaternion.c in Sources */ = {isa = PBXBuildFile; fileRef = 9264A8E2145C7A7400F8FBDF /* ZGLKQuaternion.c */; };
+		9264A8E8145C7A7400F8FBDF /* ZGLKVector2.c in Sources */ = {isa = PBXBuildFile; fileRef = 9264A8E3145C7A7400F8FBDF /* ZGLKVector2.c */; };
+		9264A8E9145C7A7400F8FBDF /* ZGLKVector3.c in Sources */ = {isa = PBXBuildFile; fileRef = 9264A8E4145C7A7400F8FBDF /* ZGLKVector3.c */; };
+		9264A8EA145C7A7400F8FBDF /* ZGLKVector4.c in Sources */ = {isa = PBXBuildFile; fileRef = 9264A8E5145C7A7400F8FBDF /* ZGLKVector4.c */; };
 		926693F3144965D000E33144 /* ZGLKNamedEffect.h in Headers */ = {isa = PBXBuildFile; fileRef = 926693F2144965D000E33144 /* ZGLKNamedEffect.h */; };
 		926693F91449665400E33144 /* ZGLKBaseEffect.h in Headers */ = {isa = PBXBuildFile; fileRef = 926693F71449665400E33144 /* ZGLKBaseEffect.h */; };
 		926693FA1449665400E33144 /* ZGLKBaseEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 926693F81449665400E33144 /* ZGLKBaseEffect.m */; };
@@ -43,6 +48,11 @@
 		9249DA7314456EC70049F432 /* ZGLKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGLKit.m; sourceTree = "<group>"; };
 		9249DA7D14456F030049F432 /* ZGLKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGLKView.h; sourceTree = "<group>"; };
 		9249DA7E14456F030049F432 /* ZGLKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGLKView.m; sourceTree = "<group>"; };
+		9264A8E1145C7A7400F8FBDF /* ZGLKMatrix4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ZGLKMatrix4.c; sourceTree = "<group>"; };
+		9264A8E2145C7A7400F8FBDF /* ZGLKQuaternion.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ZGLKQuaternion.c; sourceTree = "<group>"; };
+		9264A8E3145C7A7400F8FBDF /* ZGLKVector2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ZGLKVector2.c; sourceTree = "<group>"; };
+		9264A8E4145C7A7400F8FBDF /* ZGLKVector3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ZGLKVector3.c; sourceTree = "<group>"; };
+		9264A8E5145C7A7400F8FBDF /* ZGLKVector4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ZGLKVector4.c; sourceTree = "<group>"; };
 		926693F2144965D000E33144 /* ZGLKNamedEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGLKNamedEffect.h; sourceTree = "<group>"; };
 		926693F71449665400E33144 /* ZGLKBaseEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGLKBaseEffect.h; sourceTree = "<group>"; };
 		926693F81449665400E33144 /* ZGLKBaseEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGLKBaseEffect.m; sourceTree = "<group>"; };
@@ -58,7 +68,7 @@
 		926AB63A145C6EAD00D181F5 /* ZGLKEffectPropertyTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGLKEffectPropertyTransform.m; sourceTree = "<group>"; };
 		926AB63D145C710F00D181F5 /* ZGLKEffectPropertyLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGLKEffectPropertyLight.h; sourceTree = "<group>"; };
 		926AB63E145C710F00D181F5 /* ZGLKEffectPropertyLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGLKEffectPropertyLight.m; sourceTree = "<group>"; };
-		926AB64B145C74E800D181F5 /* ZGLKEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; path = ZGLKEffects.h; sourceTree = "<group>"; };
+		926AB64B145C74E800D181F5 /* ZGLKEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGLKEffects.h; sourceTree = "<group>"; };
 		9279088714496DDA002199A4 /* ZGLKVector4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGLKVector4.h; sourceTree = "<group>"; };
 		92F529A51446B42700BDB79B /* ZGLKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGLKViewController.h; sourceTree = "<group>"; };
 		92F529A61446B42700BDB79B /* ZGLKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGLKViewController.m; sourceTree = "<group>"; };
@@ -109,32 +119,13 @@
 		9249DA6F14456EC70049F432 /* ZGLKit */ = {
 			isa = PBXGroup;
 			children = (
-				9249DA7014456EC70049F432 /* Supporting Files */,
 				9249DA7214456EC70049F432 /* ZGLKit.h */,
 				9249DA7314456EC70049F432 /* ZGLKit.m */,
-				926693F2144965D000E33144 /* ZGLKNamedEffect.h */,
-				9249DA7D14456F030049F432 /* ZGLKView.h */,
-				9249DA7E14456F030049F432 /* ZGLKView.m */,
-				92F529A51446B42700BDB79B /* ZGLKViewController.h */,
-				92F529A61446B42700BDB79B /* ZGLKViewController.m */,
-				92F529A91446C41900BDB79B /* NSDate+ZGLKAdditions.h */,
-				92F529AA1446C41900BDB79B /* NSDate+ZGLKAdditions.m */,
-				926693F71449665400E33144 /* ZGLKBaseEffect.h */,
-				926693F81449665400E33144 /* ZGLKBaseEffect.m */,
-				926693FD1449697300E33144 /* ZGLKMatrix3.c */,
-				926693FF1449698100E33144 /* ZGLKMatrix3.h */,
-				9266940114496CD900E33144 /* ZGLKMatrix4.h */,
-				9266940314496D0E00E33144 /* ZGLKQuaternion.h */,
-				9266940514496D6500E33144 /* ZGLKVector2.h */,
-				9266940714496D8800E33144 /* ZGLKVector3.h */,
-				9279088714496DDA002199A4 /* ZGLKVector4.h */,
-				926AB634145C6E8D00D181F5 /* ZGLKEffectProperty.h */,
-				926AB635145C6E8D00D181F5 /* ZGLKEffectProperty.m */,
-				926AB639145C6EAD00D181F5 /* ZGLKEffectPropertyTransform.h */,
-				926AB63A145C6EAD00D181F5 /* ZGLKEffectPropertyTransform.m */,
-				926AB63D145C710F00D181F5 /* ZGLKEffectPropertyLight.h */,
-				926AB63E145C710F00D181F5 /* ZGLKEffectPropertyLight.m */,
-				926AB64B145C74E800D181F5 /* ZGLKEffects.h */,
+				9264A8F1145C7AED00F8FBDF /* Additions */,
+				9264A8EE145C7AB300F8FBDF /* Effects */,
+				9264A8EF145C7AC400F8FBDF /* Views */,
+				9264A8F0145C7ACF00F8FBDF /* Math */,
+				9249DA7014456EC70049F432 /* Supporting Files */,
 			);
 			path = ZGLKit;
 			sourceTree = "<group>";
@@ -145,6 +136,62 @@
 				9249DA7114456EC70049F432 /* ZGLKit-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9264A8EE145C7AB300F8FBDF /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				926693F71449665400E33144 /* ZGLKBaseEffect.h */,
+				926693F81449665400E33144 /* ZGLKBaseEffect.m */,
+				926AB634145C6E8D00D181F5 /* ZGLKEffectProperty.h */,
+				926AB635145C6E8D00D181F5 /* ZGLKEffectProperty.m */,
+				926AB63D145C710F00D181F5 /* ZGLKEffectPropertyLight.h */,
+				926AB63E145C710F00D181F5 /* ZGLKEffectPropertyLight.m */,
+				926AB639145C6EAD00D181F5 /* ZGLKEffectPropertyTransform.h */,
+				926AB63A145C6EAD00D181F5 /* ZGLKEffectPropertyTransform.m */,
+				926AB64B145C74E800D181F5 /* ZGLKEffects.h */,
+				926693F2144965D000E33144 /* ZGLKNamedEffect.h */,
+			);
+			name = Effects;
+			sourceTree = "<group>";
+		};
+		9264A8EF145C7AC400F8FBDF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9249DA7D14456F030049F432 /* ZGLKView.h */,
+				9249DA7E14456F030049F432 /* ZGLKView.m */,
+				92F529A51446B42700BDB79B /* ZGLKViewController.h */,
+				92F529A61446B42700BDB79B /* ZGLKViewController.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		9264A8F0145C7ACF00F8FBDF /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				926693FD1449697300E33144 /* ZGLKMatrix3.c */,
+				926693FF1449698100E33144 /* ZGLKMatrix3.h */,
+				9264A8E1145C7A7400F8FBDF /* ZGLKMatrix4.c */,
+				9266940114496CD900E33144 /* ZGLKMatrix4.h */,
+				9264A8E2145C7A7400F8FBDF /* ZGLKQuaternion.c */,
+				9266940314496D0E00E33144 /* ZGLKQuaternion.h */,
+				9264A8E3145C7A7400F8FBDF /* ZGLKVector2.c */,
+				9266940514496D6500E33144 /* ZGLKVector2.h */,
+				9264A8E4145C7A7400F8FBDF /* ZGLKVector3.c */,
+				9266940714496D8800E33144 /* ZGLKVector3.h */,
+				9264A8E5145C7A7400F8FBDF /* ZGLKVector4.c */,
+				9279088714496DDA002199A4 /* ZGLKVector4.h */,
+			);
+			name = Math;
+			sourceTree = "<group>";
+		};
+		9264A8F1145C7AED00F8FBDF /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				92F529A91446C41900BDB79B /* NSDate+ZGLKAdditions.h */,
+				92F529AA1446C41900BDB79B /* NSDate+ZGLKAdditions.m */,
+			);
+			name = Additions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +278,11 @@
 				926AB637145C6E8D00D181F5 /* ZGLKEffectProperty.m in Sources */,
 				926AB63C145C6EAD00D181F5 /* ZGLKEffectPropertyTransform.m in Sources */,
 				926AB640145C710F00D181F5 /* ZGLKEffectPropertyLight.m in Sources */,
+				9264A8E6145C7A7400F8FBDF /* ZGLKMatrix4.c in Sources */,
+				9264A8E7145C7A7400F8FBDF /* ZGLKQuaternion.c in Sources */,
+				9264A8E8145C7A7400F8FBDF /* ZGLKVector2.c in Sources */,
+				9264A8E9145C7A7400F8FBDF /* ZGLKVector3.c in Sources */,
+				9264A8EA145C7A7400F8FBDF /* ZGLKVector4.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
