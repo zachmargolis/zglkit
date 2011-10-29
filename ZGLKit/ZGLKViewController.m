@@ -165,7 +165,7 @@
         return;
     }
     
-    if ([self.delegate respondsToSelector:@selector(glkViewController:willPause:)]) {
+    if ([self.delegate respondsToSelector:@selector(ZGLKViewController:willPause:)]) {
         [self.delegate glkViewController:self willPause:paused];
     }
         

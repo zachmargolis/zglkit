@@ -8,16 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
-#import "ZGLKView.h"
-#import "ZGLKViewController.h"
-#import "ZGLKNamedEffect.h"
 #import "ZGLKBaseEffect.h"
+#import "ZGLKEffectProperty.h"
+#import "ZGLKEffectPropertyLight.h"
+#import "ZGLKEffectPropertyTransform.h"
+#import "ZGLKMathTypes.h"
 #import "ZGLKMatrix3.h"
 #import "ZGLKMatrix4.h"
+#import "ZGLKNamedEffect.h"
 #import "ZGLKQuaternion.h"
 #import "ZGLKVector2.h"
 #import "ZGLKVector3.h"
 #import "ZGLKVector4.h"
-#import "ZGLKEffectProperty.h"
-#import "ZGLKEffectPropertyTransform.h"
-#import "ZGLKEffectPropertyLight.h"
+#import "ZGLKView.h"
+#import "ZGLKViewController.h"
+
