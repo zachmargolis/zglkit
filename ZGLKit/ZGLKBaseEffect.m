@@ -7,6 +7,13 @@
 //
 
 #import "ZGLKBaseEffect.h"
+#import "ZGLKEffectPropertyLight.h"
+
+@interface ZGLKEffectPropertyLight (ZGLKBaseEffect)
+
+- (void)configureEffect;
+
+@end
 
 @implementation ZGLKBaseEffect
 
@@ -32,6 +39,20 @@
 
 - (void)prepareToDraw;
 {
+    [_light0 configureEffect];
+    [_light1 configureEffect];
+    [_light2 configureEffect];
+}
+
+@end
+
+@implementation ZGLKEffectPropertyLight
+
+- (void)configureEffect;
+{
+    if (!self.enabled) {
+        return;
+    }
 }
 
 @end

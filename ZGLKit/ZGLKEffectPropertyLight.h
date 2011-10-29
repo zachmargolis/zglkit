@@ -10,11 +10,6 @@
 #import "ZGLKVector3.h"
 #import "ZGLKVector4.h"
 
-typedef enum {
-    ZGLKLightingTypePerVertex,
-    ZGLKLightingTypePerPixel,
-} ZGLKLightingType;
-
 @class ZGLKEffectPropertyTransform;
 
 @interface ZGLKEffectPropertyLight : ZGLKEffectProperty

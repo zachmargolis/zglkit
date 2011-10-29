@@ -6,14 +6,21 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "ZGLKEffectPropertyLight.h"
 #import "ZGLKNamedEffect.h"
 #import "ZGLKVector4.h"
+
+
+typedef enum {
+    ZGLKLightingTypePerVertex,
+    ZGLKLightingTypePerPixel,
+} ZGLKLightingType;
 
 @class ZGLKEffectPropertyFog;
 @class ZGLKEffectPropertyMaterial;
 @class ZGLKEffectPropertyTexture;
 @class ZGLKEffectPropertyTransform;
+@class ZGLKEffectPropertyLight;
+
 
 @interface ZGLKBaseEffect : NSObject <ZGLKNamedEffect>
 
