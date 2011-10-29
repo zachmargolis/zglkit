@@ -9,6 +9,13 @@
 #include "ZGLKMatrix4.h"
 #import <assert.h>
 
+const ZGLKMatrix4 ZGLKMatrix4Identity = {
+    1.0f, 0.0f, 0.0f, 0.0f,
+    0.0f, 1.0f, 0.0f, 0.0f,
+    0.0f, 0.0f, 1.0f, 0.0f,
+    0.0f, 0.0f, 0.0f, 1.0f,
+};
+
 ZGLKMatrix4 ZGLKMatrix4Invert(ZGLKMatrix4 matrix, bool *isInvertible) {
     // unimplemented
     assert(false);

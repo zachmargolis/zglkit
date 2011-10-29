@@ -12,6 +12,13 @@
 #import <QuartzCore/CADisplayLink.h>
 
 
+@interface NSDate (ZGLKAdditions)
+
++ (NSTimeInterval)timeIntervalSinceDate:(NSDate *)date;
+
+@end
+
+
 @interface ZGLKViewController ()
 
 @property (nonatomic, assign) CADisplayLink *displayLink;
@@ -95,6 +102,8 @@
     // Explicitly use setters to invoke their side effects
     self.pauseOnWillResignActive = YES;
     self.resumeOnDidBecomeActive = YES;
+    
+    [super setView:[[[ZGLKView alloc] init] autorelease]];
 }
 
 - (void)dealloc;
@@ -267,6 +276,21 @@
     if ([view isKindOfClass:[ZGLKView class]]) {
         ((ZGLKView *)view).enableSetNeedsDisplay = NO;
     }
+}
+
+@end
+
+#pragma mark Additions
+
+@implementation NSDate (ZGLKAdditions)
+
++ (NSTimeInterval)timeIntervalSinceDate:(NSDate *)date;
+{
+    if (!date) {
+        return 0.0;
+    }
+    
+    return -1.0 * ([NSDate timeIntervalSinceReferenceDate] - [date timeIntervalSinceReferenceDate]);
 }
 
 @end
