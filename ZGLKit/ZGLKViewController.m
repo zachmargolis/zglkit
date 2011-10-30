@@ -102,7 +102,10 @@
     self.pauseOnWillResignActive = YES;
     self.resumeOnDidBecomeActive = YES;
     
-    [super setView:[[[ZGLKView alloc] init] autorelease]];
+    ZGLKView *glkView = [ZGLKView new];
+    glkView.delegate = self;
+    [super setView:glkView];
+    [glkView release];
 }
 
 - (void)dealloc;
