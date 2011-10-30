@@ -7,9 +7,15 @@
 //
 
 #import "ZGLKViewController.h"
-#import "NSDate+ZGLKAdditions.h"
 #import "ZGLKView.h"
 #import <QuartzCore/CADisplayLink.h>
+
+
+@interface NSDate (ZGLKAdditions)
+
++ (NSTimeInterval)timeIntervalSinceDate:(NSDate *)date;
+
+@end
 
 
 @interface ZGLKViewController ()
@@ -95,6 +101,11 @@
     // Explicitly use setters to invoke their side effects
     self.pauseOnWillResignActive = YES;
     self.resumeOnDidBecomeActive = YES;
+    
+    ZGLKView *glkView = [ZGLKView new];
+    glkView.delegate = self;
+    [super setView:glkView];
+    [glkView release];
 }
 
 - (void)dealloc;
@@ -165,7 +176,7 @@
         return;
     }
     
-    if ([self.delegate respondsToSelector:@selector(glkViewController:willPause:)]) {
+    if ([self.delegate respondsToSelector:@selector(ZGLKViewController:willPause:)]) {
         [self.delegate glkViewController:self willPause:paused];
     }
         
@@ -267,6 +278,21 @@
     if ([view isKindOfClass:[ZGLKView class]]) {
         ((ZGLKView *)view).enableSetNeedsDisplay = NO;
     }
+}
+
+@end
+
+#pragma mark Additions
+
+@implementation NSDate (ZGLKAdditions)
+
++ (NSTimeInterval)timeIntervalSinceDate:(NSDate *)date;
+{
+    if (!date) {
+        return 0.0;
+    }
+    
+    return -1.0 * ([NSDate timeIntervalSinceReferenceDate] - [date timeIntervalSinceReferenceDate]);
 }
 
 @end

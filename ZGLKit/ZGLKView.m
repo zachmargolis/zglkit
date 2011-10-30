@@ -114,38 +114,38 @@
 
 #pragma mark Accessors/Mutators
 
-- (void)setDrawableColorFormat:(GLKViewDrawableColorFormat)drawableColorFormat;
+- (void)setDrawableColorFormat:(ZGLKViewDrawableColorFormat)drawableColorFormat;
 {
     _drawableColorFormat = drawableColorFormat;
     self.recreateFramebufferOnNextDraw = YES;
     
     NSString *drawablePropertyValue = nil;
     switch (drawableColorFormat) {
-        case GLKViewDrawableColorFormatRGBA8888:
+        case ZGLKViewDrawableColorFormatRGBA8888:
             drawablePropertyValue = kEAGLColorFormatRGBA8;
             break;
-        case GLKViewDrawableColorFormatRGB565:
+        case ZGLKViewDrawableColorFormatRGB565:
             drawablePropertyValue = kEAGLColorFormatRGB565;
             break;
     }
     [self.drawableProperties setObject:drawablePropertyValue forKey:kEAGLDrawablePropertyColorFormat];
 }
 
-- (void)setDrawableDepthFormat:(GLKViewDrawableDepthFormat)drawableDepthFormat;
+- (void)setDrawableDepthFormat:(ZGLKViewDrawableDepthFormat)drawableDepthFormat;
 {
     _drawableDepthFormat = drawableDepthFormat;
     self.recreateFramebufferOnNextDraw = YES;
     // TODO
 }
 
-- (void)setDrawableMultisample:(GLKViewDrawableMultisample)drawableMultisample;
+- (void)setDrawableMultisample:(ZGLKViewDrawableMultisample)drawableMultisample;
 {
     _drawableMultisample = drawableMultisample;
     self.recreateFramebufferOnNextDraw = YES;
     // TODO
 }
 
-- (void)setDrawableStencilFormat:(GLKViewDrawableStencilFormat)drawableStencilFormat;
+- (void)setDrawableStencilFormat:(ZGLKViewDrawableStencilFormat)drawableStencilFormat;
 {
     _drawableStencilFormat = drawableStencilFormat;
     self.recreateFramebufferOnNextDraw = YES;
@@ -158,7 +158,7 @@
     return (CAEAGLLayer *)self.layer;
 }
 
-#pragma mark GLKView
+#pragma mark ZGLKView
 
 - (void)bindDrawable;
 {
@@ -199,7 +199,7 @@
     
     // TODO: figure out ordering
     [self drawRect:self.bounds];
-    [self.delegate glKView:self drawInRect:self.bounds];
+    [self.delegate glkView:self drawInRect:self.bounds];
 
     [self presentDrawable];
 }

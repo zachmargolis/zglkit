@@ -7,32 +7,28 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <OpenGLES/ES1/gl.h>
-#import <OpenGLES/ES1/glext.h>
-#import <OpenGLES/ES2/gl.h>
-#import <OpenGLES/ES2/glext.h>
 
 
 typedef enum {
-    GLKViewDrawableColorFormatRGBA8888 = 0,
-    GLKViewDrawableColorFormatRGB565,
-} GLKViewDrawableColorFormat;
+    ZGLKViewDrawableColorFormatRGBA8888 = 0,
+    ZGLKViewDrawableColorFormatRGB565,
+} ZGLKViewDrawableColorFormat;
 
 typedef enum {
-    GLKViewDrawableDepthFormatNone = 0,
-    GLKViewDrawableDepthFormat16,
-    GLKViewDrawableDepthFormat24,
-} GLKViewDrawableDepthFormat;
+    ZGLKViewDrawableDepthFormatNone = 0,
+    ZGLKViewDrawableDepthFormat16,
+    ZGLKViewDrawableDepthFormat24,
+} ZGLKViewDrawableDepthFormat;
 
 typedef enum {
-    GLKViewDrawableStencilFormatNone = 0,
-    GLKViewDrawableStencilFormat8,
-} GLKViewDrawableStencilFormat;
+    ZGLKViewDrawableStencilFormatNone = 0,
+    ZGLKViewDrawableStencilFormat8,
+} ZGLKViewDrawableStencilFormat;
 
 typedef enum {
-    GLKViewDrawableMultisampleNone = 0,
-    GLKViewDrawableMultisample4X,
-} GLKViewDrawableMultisample;
+    ZGLKViewDrawableMultisampleNone = 0,
+    ZGLKViewDrawableMultisample4X,
+} ZGLKViewDrawableMultisample;
 
 
 @class EAGLContext;
@@ -47,11 +43,11 @@ typedef enum {
 
 @property (nonatomic, retain) EAGLContext *context;
 @property (nonatomic, assign) id <ZGLKViewDelegate> delegate;
-@property (nonatomic) GLKViewDrawableColorFormat drawableColorFormat;
-@property (nonatomic) GLKViewDrawableDepthFormat drawableDepthFormat;
+@property (nonatomic) ZGLKViewDrawableColorFormat drawableColorFormat;
+@property (nonatomic) ZGLKViewDrawableDepthFormat drawableDepthFormat;
 @property (nonatomic, readonly) NSInteger drawableHeight;
-@property (nonatomic) GLKViewDrawableMultisample drawableMultisample;
-@property (nonatomic) GLKViewDrawableStencilFormat drawableStencilFormat;
+@property (nonatomic) ZGLKViewDrawableMultisample drawableMultisample;
+@property (nonatomic) ZGLKViewDrawableStencilFormat drawableStencilFormat;
 @property (nonatomic, readonly) NSInteger drawableWidth;
 @property (nonatomic) BOOL enableSetNeedsDisplay;
 
@@ -67,6 +63,6 @@ typedef enum {
 
 @protocol ZGLKViewDelegate <NSObject>
 
-- (void)glKView:(ZGLKView *)view drawInRect:(CGRect)rect;
+- (void)glkView:(ZGLKView *)view drawInRect:(CGRect)rect;
 
 @end
